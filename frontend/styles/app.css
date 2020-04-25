@@ -1,0 +1,11 @@
+body{
+    background: #40739e;
+}
+
+ div.card>div.row>div.col-md-4>img.cover{
+     display: flexbox;
+    height: 100%;
+    width: 100%;
+    padding-top: 1em;
+    padding-left: 1em;
+}
