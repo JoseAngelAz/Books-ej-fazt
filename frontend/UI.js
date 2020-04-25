@@ -20,12 +20,12 @@ class UI {
                     </div>
                     <div class= "col-md-7 fondo-carta text-center">
                     <div class= "carta-bloque card-block px-2 rounded col-12">
-                        <h4 class="card-title" >${book.title}</4>
-                        <p class="card-text">${book.author}</p>
-                        <p class="card-text">${book.isbn}</p>
-                        <p class="card-text">${book.price}</p>
-                        <p class="card-text">${book.status_life}</p>
-                        <p class="card-text">${book.status_book}</p>
+                        <h4 class="card-title" >Titulo: ${book.title}</4>
+                        <p class="card-text">Autor: ${book.author}</p>
+                        <p class="card-text">ISBN: ${book.isbn}</p>
+                        <p class="card-text">Precio: ${book.price}</p>
+                        <p class="card-text">Status Life: ${book.status_life}</p>
+                        <p class="card-text">Status Book: ${book.status_book}</p>
 
                         <a href="#" class="btn btn-x btn-block rounded delete" _id="${book._id}">ELIMINAR</a>
                     </div>    
