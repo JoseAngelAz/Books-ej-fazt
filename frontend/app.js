@@ -27,12 +27,25 @@ import UI from './UI';
     formData.append('status_book',status_book);
 
     const ui = new UI();
-    ui.addANewBook(formData);
+    //ui.addANewBook(formData);
 
     //mensaje en pantalla del ui
-    ui.renderMessage('New Book Added','success',5000);
+    
     /* const bookService = new BookService();
     bookService.postBook(formData); */
+
+    if (title === '' || author === '' || isbn === ''||price === ''||status_life === ''||status_book === ''||image === null) {
+      ui.renderMessage('Por favor llene todos los campos del libro', 'warning', 3000);
+    }
+    /* if (image = 0|| image === '') {
+      ui.renderMessage('Por favor coloque la portada del libro', 'warning', 3000);
+    } */
+    
+    else {
+      // Pass the new book to the UI
+      ui.renderMessage('Libro Agregado','success',5000);
+      ui.addANewBook(formData);
+    }
 
     e.preventDefault();
   });
@@ -44,7 +57,7 @@ import UI from './UI';
       const ui = new UI();
       ui.deleteBook(e.target.getAttribute('_id'));
       //mensaje del ui
-      ui.renderMessage('Book Deleted', 'danger', 5000);
+      ui.renderMessage('Libro borrado', 'danger', 5000);
     }
     e.preventDefault();
   });
