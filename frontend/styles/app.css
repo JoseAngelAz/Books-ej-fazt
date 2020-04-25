@@ -2,6 +2,13 @@ body{
     background: #40739e;
 }
 
+div.container{
+  margin-top: 15px;
+}
+
+div.container>div.row>div.formulita{
+  margin-top: 9px;
+}
 
 div.container>a{
     color:#1289A7;
@@ -21,6 +28,7 @@ div.container>a{
 }
 
 div.card>div.row>div.col-md-4{
+    
     padding-top: 4px;
     margin-left: 4px;
 }
