@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');// plugin para leer html
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const devMode = process.env.NODE_ENV != 'production';//devuelve T o F
+const devMode = process.env.NODE_ENV != 'development';//devuelve T o F
 console.log(devMode);
 module.exports = {
 
